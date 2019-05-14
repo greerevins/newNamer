@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <title>New Namer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="newNamer.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
 </head>
 
-<body>
+<body onload="initNamer()">
     <h1 class="text">
         Generate Names
     </h1>
     <p class="text">
-        <select>
-            <option value="Select Language">Select Language</option>
-            <option value="gnomish">gnomish</option>
-            <option value="Dickens">Dickens</option>
-            <option value="Greek">Greek</option>
+        <select id="optionMenu">
         </select>
     </p>
     <p class="text">

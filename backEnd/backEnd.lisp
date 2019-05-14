@@ -1,3 +1,3 @@
 ;;;; backEnd.lisp
 
-(in-package #:backEnd)
+(in-package #:backend)

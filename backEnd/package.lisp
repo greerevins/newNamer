@@ -1,4 +1,4 @@
 ;;;; package.lisp
 
-(defpackage #:backEnd
+(defpackage #:backend
   (:use #:cl))

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>New Namer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="newNamer.js"></script>
+    <script type="text/javascript" src="/newNamer.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
@@ -20,9 +20,9 @@
         </select>
     </p>
     <p class="text">
-        <button type="button">Click to generate</button>
+        <button type="button" onclick="getGeneratedNames()">Click to generate</button>
     </p>
-    <p class="text">
+    <p class="text" id=generatedNames>
         your names here
     </p>
 </body>

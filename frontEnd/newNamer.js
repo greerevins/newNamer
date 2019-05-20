@@ -9,7 +9,7 @@ function initNamer() {
         theSelect.appendChild(option);
     }
 
-   // a test to make sure axios library works axiosTest()
+    // a test to make sure axios library works axiosTest()
 }
 
 
@@ -18,14 +18,29 @@ function mockFetchOptions() {
 }
 
 
-function mockRequestNames (){
+function mockRequestNames() {
     let theSelect = document.getElementById("optionMenu");
 }
 
 
 
 //function axiosTest(){
-    //let result= axios.get('http://mars.local:5984');
-    //alert(JSON.stringify(result));
-    //return result;
+//let result= axios.get('http://localhost:4242/generate-names');
+//alert(JSON.stringify(result));
+//return result;
 //}
+
+function hunchentootTest() {
+    let result = axios.get('http://localhost:4242/generate-names');
+    alert(JSON.stringify(result));
+}
+
+// axios.get('http://localhost:4242/generate-names')
+
+function getGeneratedNames() {
+    axios.get('http://localhost:4242/generate-names')
+        .then(function (response) {
+            let outputParagraph = document.getElementById('generatedNames');
+            outputParagraph.innerText = JSON.stringify(response.data);
+        })
+}
